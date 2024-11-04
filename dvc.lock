@@ -1,21 +1,21 @@
 schema: '2.0'
 stages:
   do-something:
-    cmd: echo sup > sup.txt
+    cmd: echo supp > sup.txt
     outs:
     - path: sup.txt
       hash: md5
-      md5: 953755708db864f0dba54a78c8dca344
-      size: 4
+      md5: 6d02777f519903fbb4e925a54df7b659
+      size: 5
   do-more:
     cmd: cat sup.txt > lol.txt
     deps:
     - path: sup.txt
       hash: md5
-      md5: 953755708db864f0dba54a78c8dca344
-      size: 4
+      md5: 6d02777f519903fbb4e925a54df7b659
+      size: 5
     outs:
     - path: lol.txt
       hash: md5
-      md5: 953755708db864f0dba54a78c8dca344
-      size: 4
+      md5: 6d02777f519903fbb4e925a54df7b659
+      size: 5

@@ -1,6 +1,6 @@
 stages:
   do-something:
-    cmd: echo sup > sup.txt
+    cmd: echo supp > sup.txt
     outs:
       - sup.txt
   do-more:
