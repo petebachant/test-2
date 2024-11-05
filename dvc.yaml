@@ -1,6 +1,6 @@
 stages:
   do-something:
-    cmd: echo supp > sup.txt
+    cmd: echo sup > sup.txt
     outs:
       - sup.txt
   do-more:
@@ -9,3 +9,9 @@ stages:
       - sup.txt
     outs:
       - lol.txt
+  do-more-2:
+    cmd: cat sup.txt > lol2.txt
+    deps:
+      - sup.txt
+    outs:
+      - lol2.txt
