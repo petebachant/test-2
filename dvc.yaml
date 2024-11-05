@@ -19,3 +19,7 @@ stages:
     cmd: echo sup > lol4.txt
     outs:
       - lol4.txt
+  run3:
+    cmd: echo sup > lol5.txt
+    outs:
+      - lol5.txt
