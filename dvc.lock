@@ -38,3 +38,10 @@ stages:
       hash: md5
       md5: 953755708db864f0dba54a78c8dca344
       size: 4
+  run3:
+    cmd: echo sup > lol5.txt
+    outs:
+    - path: lol5.txt
+      hash: md5
+      md5: 953755708db864f0dba54a78c8dca344
+      size: 4
