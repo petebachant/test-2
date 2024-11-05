@@ -1,2 +1,6 @@
 questions:
   - What's going on?
+figures:
+  - path: figures/chart.png
+    title: My figure
+    description: This is a cool one.
