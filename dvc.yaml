@@ -24,8 +24,6 @@ stages:
     outs:
       - lol5.txt
   run4:
-    cmd: cat sup.txt > yo.txt
-    deps:
-      - sup.txt
+    cmd: cat fkjghskdjfhsdkjfhds > yo.txt
     outs:
       - yo.txt

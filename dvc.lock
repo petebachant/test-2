@@ -45,3 +45,15 @@ stages:
       hash: md5
       md5: 953755708db864f0dba54a78c8dca344
       size: 4
+  run4:
+    cmd: cat sup.txt > yo.txt
+    deps:
+    - path: sup.txt
+      hash: md5
+      md5: 953755708db864f0dba54a78c8dca344
+      size: 4
+    outs:
+    - path: yo.txt
+      hash: md5
+      md5: 953755708db864f0dba54a78c8dca344
+      size: 4
