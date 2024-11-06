@@ -23,3 +23,9 @@ stages:
     cmd: echo sup > lol5.txt
     outs:
       - lol5.txt
+  run4:
+    cmd: cat sup.txt > yo.txt
+    deps:
+      - sup.txt
+    outs:
+      - yo.txt

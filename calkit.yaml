@@ -5,3 +5,8 @@ datasets:
     stage: run3
     title: Lol 5
     description: Amazin.
+publications:
+  - path: yo.txt
+    stage: run4
+    title: This is a publication
+    description: It's a very nice one.
