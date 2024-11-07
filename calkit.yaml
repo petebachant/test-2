@@ -1,2 +1,7 @@
 questions:
   - What's going on?
+publications:
+  - path: paper.pdf
+    stage: word-to-pdf
+    title: The paper
+    description: This is the paper.
