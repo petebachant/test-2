@@ -1,0 +1,5 @@
+outs:
+- md5: 9cd2e27623f0bc3faaff55367bcf9f47
+  size: 15567
+  hash: md5
+  path: paper.docx
