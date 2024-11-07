@@ -1,7 +1,0 @@
-stages:
-  extract-figure:
-    cmd: calkit excel-chart-to-png data.xlsx --chart-index=0 --output figures/my-figure.png
-    deps:
-      - data.xlsx
-    outs:
-      - figures/my-figure.png

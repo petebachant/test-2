@@ -1,17 +1,2 @@
 questions:
   - What's going on?
-datasets:
-  - path: lol5.txt
-    stage: run3
-    title: Lol 5
-    description: Amazin.
-publications:
-  - path: yo.txt
-    stage: run4
-    title: This is a publication
-    description: It's a very nice one.
-figures:
-  - path: figures/my-figure.png
-    stage: extract-figure
-    title: The chart
-    description: This is the best chart.
