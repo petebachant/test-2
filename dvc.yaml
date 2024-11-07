@@ -5,3 +5,7 @@ stages:
       - paper.docx
     outs:
       - paper.pdf
+  my-second-stage:
+    cmd: echo sup > lol.txt
+    outs:
+      - lol.txt
