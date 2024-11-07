@@ -1,6 +1,6 @@
 stages:
   word-to-pdf:
-    cmd: calkit office word-to-pdf paper.docx --output paper.pdf
+    cmd: calkit office word-to-pdf paper.docx paper.pdf
     deps:
       - paper.docx
     outs:
