@@ -8,6 +8,6 @@ stages:
   excel-thing:
     cmd: cp data.xlsx data-copy.xlsx
     deps:
-      - data.xslx
+      - data.xlsx
     outs:
       - data-copy.xlsx
