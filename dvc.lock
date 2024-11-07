@@ -5,13 +5,13 @@ stages:
     deps:
     - path: paper.docx
       hash: md5
-      md5: abf6d8f82735b0400c959120e7dda8a8
-      size: 145294
+      md5: 4f3bd5ff58bc24476b114a1de99c98a1
+      size: 145345
     outs:
     - path: paper.pdf
       hash: md5
-      md5: a02c16b14e236b69acc324010cfbdfe9
-      size: 1034245
+      md5: 05a3d5fb1420ed0f02540e5e828acab9
+      size: 1034392
   my-second-stage:
     cmd: echo sup > lol.txt
     outs:
