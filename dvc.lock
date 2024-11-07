@@ -5,10 +5,10 @@ stages:
     deps:
     - path: paper.docx
       hash: md5
-      md5: 982a86ddc1b2d1ae62a404ceaf00b5ca
-      size: 44708
+      md5: a4855afc80cf64f83721af957f97aca6
+      size: 146604
     outs:
     - path: paper.pdf
       hash: md5
-      md5: bd8dfefea56306201ce7b5dccd19c2fa
-      size: 750032
+      md5: 2b32a7c1141589b27135db9e1cdae540
+      size: 1034461
