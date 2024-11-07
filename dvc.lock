@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  word-to-pdf:
+    cmd: calkit office word-to-pdf paper.docx paper.pdf
+    deps:
+    - path: paper.docx
+      hash: md5
+      md5: 982a86ddc1b2d1ae62a404ceaf00b5ca
+      size: 44708
+    outs:
+    - path: paper.pdf
+      hash: md5
+      md5: bd8dfefea56306201ce7b5dccd19c2fa
+      size: 750032
