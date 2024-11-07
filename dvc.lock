@@ -12,3 +12,10 @@ stages:
       hash: md5
       md5: a02c16b14e236b69acc324010cfbdfe9
       size: 1034245
+  my-second-stage:
+    cmd: echo sup > lol.txt
+    outs:
+    - path: lol.txt
+      hash: md5
+      md5: 953755708db864f0dba54a78c8dca344
+      size: 4
