@@ -11,7 +11,3 @@ stages:
       - data.xlsx
     outs:
       - data-copy.xlsx
-  stage-3:
-    cmd: echo supppppp > lol66.txt
-    outs:
-      - lol66.txt
