@@ -11,3 +11,9 @@ stages:
       - data.xlsx
     outs:
       - data-copy.xlsx
+  word-2:
+    cmd: calkit office word-to-pdf doc.docx --output doc.pdf
+    deps:
+      - doc.docx
+    outs:
+      - doc.pdf
