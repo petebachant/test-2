@@ -5,3 +5,8 @@ publications:
     stage: word-to-pdf
     title: The paper
     description: This is the paper.
+figures:
+  - path: figures/my-plot.png
+    title: My plot
+    description: This is a plot.
+    stage:
