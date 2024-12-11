@@ -5,8 +5,16 @@ publications:
     stage: word-to-pdf
     title: The paper
     description: This is the paper.
+  - path: paper/paper.pdf
+    kind: journal-article
+    title: The paper
+    description: This is the paper.
+    stage: build-paper
 figures:
   - path: figures/my-plot.png
     title: My plot
     description: This is a plot.
     stage:
+environments:
+  latex:
+    _include: .calkit/environments/latex.yaml

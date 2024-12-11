@@ -2,12 +2,20 @@ stages:
   word-to-pdf:
     cmd: calkit office word-to-pdf paper.docx paper.pdf
     deps:
-      - paper.docx
+    - paper.docx
     outs:
-      - paper.pdf
+    - paper.pdf
   excel-thing:
     cmd: cp data.xlsx data-copy.xlsx
     deps:
-      - data.xlsx
+    - data.xlsx
     outs:
-      - data-copy.xlsx
+    - data-copy.xlsx
+  build-paper:
+    cmd: calkit runenv -n latex "cd paper && latexmk -interaction=nonstopmode -pdf
+      paper.tex"
+    deps:
+    - .calkit/environments/latex.yaml
+    - paper/paper.tex
+    outs:
+    - paper/paper.pdf
