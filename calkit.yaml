@@ -18,3 +18,7 @@ figures:
 environments:
   latex:
     _include: .calkit/environments/latex.yaml
+datasets:
+  - path: data.xlsx
+    title: The data
+    description: This is the data.
