@@ -31,3 +31,20 @@ stages:
       hash: md5
       md5: 6a16b3167481d9a113623b0b2063a78a
       size: 9421
+  build-paper:
+    cmd: calkit runenv -n latex "cd paper && latexmk -interaction=nonstopmode -pdf
+      paper.tex"
+    deps:
+    - path: .calkit/environments/latex.yaml
+      hash: md5
+      md5: a2daf8fb84b593caf26512bdea23a39e
+      size: 75
+    - path: paper/paper.tex
+      hash: md5
+      md5: 1e27a751f2159e495369e706d147433e
+      size: 38084
+    outs:
+    - path: paper/paper.pdf
+      hash: md5
+      md5: a7319488351b5abc62ffee79137ce204
+      size: 246467
