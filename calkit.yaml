@@ -32,3 +32,6 @@ showcase:
       # What about code
       git clone something
       ```
+
+      ### Below is an entire file
+  - markdown_file: docs/test.md
