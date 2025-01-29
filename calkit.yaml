@@ -35,3 +35,5 @@ showcase:
 
       ### Below is an entire file
   - markdown_file: docs/test.md
+  - markdown: "### A YAML file below"
+  - yaml_file: dvc.yaml
