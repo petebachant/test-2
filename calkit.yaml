@@ -37,3 +37,6 @@ showcase:
   - markdown_file: docs/test.md
   - markdown: "### A YAML file below"
   - yaml_file: dvc.yaml
+  - markdown: "### These are the stages"
+  - yaml_file: dvc.yaml
+    object_name: stages
