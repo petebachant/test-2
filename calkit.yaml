@@ -27,3 +27,8 @@ showcase:
       This is some Markdown
 
       ## Here we have a second level heading
+
+      ```sh
+      # What about code
+      git clone something
+      ```
