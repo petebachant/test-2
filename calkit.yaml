@@ -20,8 +20,10 @@ environments:
     _include: .calkit/environments/latex.yaml
   quarto:
     kind: docker
-    image: ghcr.io/quarto-dev/quarto:1.7.22
+    image: ghcr.io/quarto-dev/quarto:1.6.43
+    platform: linux/amd64
     wdir: /work
+    user: root
 datasets:
   - path: data.xlsx
     title: The data
