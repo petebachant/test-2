@@ -53,10 +53,10 @@ stages:
     deps:
     - path: pubs/overleaf-paper/main.tex
       hash: md5
-      md5: 9d31cbacc109e547a5395ee923000765
-      size: 231
+      md5: 866ec7ceb03615e348bd93373a732ff7
+      size: 268
     outs:
     - path: pubs/overleaf-paper/main.pdf
       hash: md5
-      md5: 5fcce1415defc25f0a6056ea0476d13a
-      size: 43289
+      md5: c5b5f49db39b0f166dfdc14c9d52e79a
+      size: 43663
