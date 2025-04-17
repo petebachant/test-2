@@ -21,7 +21,7 @@ publications:
       sync_paths:
         - main.tex
       push_paths: []
-      last_sync_commit: 9c1c9f124637f6b3dc0c444c463f9e137aaa7e0e
+      last_sync_commit: f60b040f91b1910144bcf4f3f905f9727b048023
 figures:
   - path: figures/my-plot.png
     title: My plot
