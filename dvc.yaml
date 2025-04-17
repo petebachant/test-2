@@ -19,3 +19,9 @@ stages:
     - paper/paper.tex
     outs:
     - paper/paper.pdf
+  build-pubs-overleaf-paper:
+    cmd: calkit xenv -n latex -- latexmk -cd -interaction=nonstopmode -pdf pubs/overleaf-paper/main.tex
+    deps:
+    - pubs/overleaf-paper/main.tex
+    outs:
+    - pubs/overleaf-paper/main.pdf

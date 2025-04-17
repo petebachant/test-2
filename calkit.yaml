@@ -10,6 +10,18 @@ publications:
     title: The paper
     description: This is the paper.
     stage: build-paper
+  - path: pubs/overleaf-paper/main.pdf
+    title: Overleaf paper
+    description:
+    kind:
+    stage: build-pubs-overleaf-paper
+    overleaf:
+      project_id: 54b68eff0ee71ad2767b704a
+      wdir: pubs/overleaf-paper
+      sync_paths:
+        - main.tex
+      push_paths: []
+      last_sync_commit:
 figures:
   - path: figures/my-plot.png
     title: My plot
@@ -17,7 +29,9 @@ figures:
     stage:
 environments:
   latex:
-    _include: .calkit/environments/latex.yaml
+    kind: docker
+    image: texlive/texlive:latest-full
+    description: TeXlive full.
   quarto:
     kind: docker
     image: ghcr.io/quarto-dev/quarto:1.6.43
