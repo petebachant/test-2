@@ -15,6 +15,11 @@ publications:
     description:
     kind:
     stage: build-pubs-overleaf-paper
+  - path: paper-2/main.pdf
+    title: This is a paper about the analysis
+    description:
+    kind: journal-article
+    stage: build-paper-2
 figures:
   - path: figures/my-plot.png
     title: My plot
@@ -59,3 +64,14 @@ overleaf_sync:
     sync_paths:
       - main.tex
     push_paths: []
+pipeline:
+  stages:
+    build-paper-2:
+      kind: latex
+      target_path: paper-2/main.tex
+      environment: latex
+      inputs:
+        - paper-2/references.bib
+        - paper-2/figures
+        - paper-2/tables
+        - paper-2/results.tex

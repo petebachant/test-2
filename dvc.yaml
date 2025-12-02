@@ -1,27 +1,41 @@
 stages:
+  build-paper-2:
+    cmd: calkit latex build -e latex --no-check paper-2/main.tex
+    deps:
+      - paper-2/main.tex
+      - paper-2/references.bib
+      - paper-2/figures
+      - paper-2/tables
+      - paper-2/results.tex
+      - .calkit/env-locks/latex
+    outs:
+      - paper-2/main.pdf
+    desc: Automatically generated from the 'build-paper-2' stage in calkit.yaml.
+      Changes made here will be overwritten.
   word-to-pdf:
     cmd: calkit office word-to-pdf paper.docx paper.pdf
     deps:
-    - paper.docx
+      - paper.docx
     outs:
-    - paper.pdf
+      - paper.pdf
   excel-thing:
     cmd: cp data.xlsx data-copy.xlsx
     deps:
-    - data.xlsx
+      - data.xlsx
     outs:
-    - data-copy.xlsx
+      - data-copy.xlsx
   build-paper:
-    cmd: calkit runenv -n latex "cd paper && latexmk -interaction=nonstopmode -pdf
-      paper.tex"
+    cmd: calkit runenv -n latex "cd paper && latexmk -interaction=nonstopmode
+      -pdf paper.tex"
     deps:
-    - .calkit/environments/latex.yaml
-    - paper/paper.tex
+      - .calkit/environments/latex.yaml
+      - paper/paper.tex
     outs:
-    - paper/paper.pdf
+      - paper/paper.pdf
   build-pubs-overleaf-paper:
-    cmd: calkit xenv -n latex -- latexmk -cd -interaction=nonstopmode -pdf pubs/overleaf-paper/main.tex
+    cmd: calkit xenv -n latex -- latexmk -cd -interaction=nonstopmode -pdf
+      pubs/overleaf-paper/main.tex
     deps:
-    - pubs/overleaf-paper/main.tex
+      - pubs/overleaf-paper/main.tex
     outs:
-    - pubs/overleaf-paper/main.pdf
+      - pubs/overleaf-paper/main.pdf
