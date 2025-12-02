@@ -15,13 +15,6 @@ publications:
     description:
     kind:
     stage: build-pubs-overleaf-paper
-    overleaf:
-      project_id: 54b68eff0ee71ad2767b704a
-      wdir: pubs/overleaf-paper
-      sync_paths:
-        - main.tex
-      push_paths: []
-      last_sync_commit: f60b040f91b1910144bcf4f3f905f9727b048023
 figures:
   - path: figures/my-plot.png
     title: My plot
@@ -60,3 +53,9 @@ showcase:
   - markdown: "### These are the stages"
   - yaml_file: dvc.yaml
     object_name: stages
+overleaf_sync:
+  pubs/overleaf-paper:
+    url: https://www.overleaf.com/project/54b68eff0ee71ad2767b704a
+    sync_paths:
+      - main.tex
+    push_paths: []
